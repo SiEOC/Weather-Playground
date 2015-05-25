@@ -42,7 +42,7 @@
          NSLog(@"weather=\r%@", weather);
          self.countryName.text = weather.locationName;
          //self.iconImageView = weather;
-         self.tempLabel.text = weather.weatherTemp;
+         self.tempLabel.text = [weather.weatherTemp stringValue];//([NSString weather.weatherTemp - 273.15) + 32 +((9.0/5.0)*weather.weatherTemp);
          self.mainLabel.text = weather.weatherMain;
          //self.
          NSLog(@"done");
